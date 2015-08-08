@@ -8,6 +8,7 @@
     git clone https://github.com/TableTopSecurity/TableTopSecurity.github.io.git
     cd TableTopSecurity.github.io
     git fetch origin
+    git checkout -b gh-pages origin/master
     git checkout -b source origin/source
 
 ### Setup virtualenv
@@ -26,6 +27,6 @@
     # site is viewable at http://localhost:8000/
 
 ## Commit content
-    pelican content -o output -s pelicanconf.py
+    pelican content -o output -s publishconf.py
     ghp-import output
     git push origin gh-pages:master

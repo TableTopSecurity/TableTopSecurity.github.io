@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Mark Gondree, Zach Petersen'
 SITENAME = u'TableTop Security'
-SITEURL = 'https://localhost:8000/'
+SITEURL = 'https://localhost:8000'
 SITELOGO = 'images/2497807.png'
 SITELOGO_SIZE = '30px'
 
