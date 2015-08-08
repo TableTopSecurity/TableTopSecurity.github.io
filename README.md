@@ -8,8 +8,7 @@
     git clone https://github.com/TableTopSecurity/TableTopSecurity.github.io.git
     cd TableTopSecurity.github.io
     git fetch origin
-    git checkout -b gh-pages origin/master
-    git checkout -b source origin/source
+    git branch gh-pages origin/master
 
 ### Setup virtualenv
     mkdir ENV
