@@ -1,0 +1,24 @@
+
+/* tts.css style sheet, need to minimize once figured out **/
+
+.red {
+color: #ff0000;
+}
+
+#social-bar a {
+color: #ffffff;
+}
+
+#social-bar a:hover {
+color: #ff0000;
+}
+
+.navbar-brand > img {
+	float: left;
+	margin: -8px 2px 0 0;
+}
+
+.navbar-default {
+    background-color: #ffffff;
+    border-color: #e7e7e7;
+}
