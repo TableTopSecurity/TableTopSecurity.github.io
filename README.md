@@ -7,7 +7,8 @@
 ### Clone repository and work with `source` branch
     git clone https://github.com/TableTopSecurity/TableTopSecurity.github.io.git
     cd TableTopSecurity.github.io
-    git checkout -b source 
+    git fetch origin
+    git checkout -b source origin/source
 
 ### Setup virtualenv
     mkdir ENV
