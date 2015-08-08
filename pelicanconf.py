@@ -55,7 +55,7 @@ DISPLAY_CATEGORIES_ON_SIDEBAR = False
 DISPLAY_SERIES_ON_SIDEBAR = False
 
 # Blogroll
-LINKS = (,)
+LINKS = ()
 
 # Social widget
 SOCIAL = (('twitter', 'https://twitter.com/TableTopSec'),
