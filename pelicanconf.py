@@ -32,11 +32,13 @@ TWITTER_WIDGET_ID ='620044429580066816'
 
 PATH = 'content'
 
-STATIC_PATHS = ['images', 'extras/css/tts.css']
+STATIC_PATHS = ['images', 'extras/css/tts.css', 'extras/CNAME']
 
 EXTRA_PATH_METADATA = {
-    'extras/css/tts.css': {'path': 'static/tts.css'}
-    }
+    'extras/css/tts.css': {'path': 'static/tts.css'},
+    'extras/CNAME' : {'path': 'CNAME'}
+}
+
 BANNER = 'images/go-2.jpg'
 #TEMPLATE_PAGES = {'themes/pelican-bootstrap3/templates/home.html': 'pages/home.html'}
 
