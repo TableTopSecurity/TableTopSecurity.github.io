@@ -43,6 +43,6 @@
     # now push the local `gh-pages` branch to the remote `master` branch
     git push origin gh-pages:master
 
-    # if you did this wrong, you'll get some type of merge error when 
+    # if you did this wrong, you'll get some type of merge error when
     #    you push gh-pages to the remote master branch and it will
     #    complain that you shoud have done a pull first
