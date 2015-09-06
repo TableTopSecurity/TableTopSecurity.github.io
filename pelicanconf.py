@@ -2,11 +2,12 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = u'Mark Gondree, Zach Petersen'
+AUTHOR = u'Mark Gondree, Zachary NJ Peterson'
 SITENAME = u'TableTop Security'
-SITEURL = 'https://localhost:8000'
+SITEURL = 'http://localhost:8000'
 SITELOGO = 'images/2497807.png'
 SITELOGO_SIZE = '30px'
+FAVICON = 'images/favicon.ico'
 
 TIMEZONE = 'US/Pacific'
 
@@ -14,7 +15,14 @@ DEFAULT_LANG = u'en'
 
 DEFAULT_PAGINATION = 6
 
-TAG_CLOUD_MAX_ITEMS = 6
+# Plugins
+PLUGIN_PATHS = ["plugins"]
+PLUGINS = ["assets", "tag_cloud"]
+
+# Tag Cloud
+TAG_CLOUD_MAX_ITEMS = 200
+DISPLAY_TAGS_INLINE = True
+TAG_CLOUD_STEPS = 1
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -36,11 +44,10 @@ STATIC_PATHS = ['images', 'extras/css/tts.css', 'extras/CNAME']
 
 EXTRA_PATH_METADATA = {
     'extras/css/tts.css': {'path': 'static/tts.css'},
-    'extras/CNAME' : {'path': 'CNAME'}
+    'extras/CNAME' : {'path': 'CNAME'},
 }
 
 BANNER = 'images/go-2.jpg'
-#TEMPLATE_PAGES = {'themes/pelican-bootstrap3/templates/home.html': 'pages/home.html'}
 
 # Menu items
 USE_FOLDER_AS_CATEGORY = False
@@ -49,12 +56,13 @@ DISPLAY_PAGES_ON_MENU = False
 DEFAULT_CTATEGORY = 'misc.'
 INDEX_SAVE_AS = 'blog_index.html'
 MENUITEMS = (('Blog', '/blog_index.html'),
-			 ('About', '/pages/about.html'),)
+             ('About', '/pages/about.html'),)
 
 DISPLAY_RECENT_POSTS_ON_SIDEBAR = False
-DISPLAY_TAGS_ON_SIDEBAR = False
+DISPLAY_TAGS_ON_SIDEBAR = True
 DISPLAY_CATEGORIES_ON_SIDEBAR = False
 DISPLAY_SERIES_ON_SIDEBAR = False
+DISPLAY_SOCIAL_ON_SIDEBAR = False
 
 # Blogroll
 LINKS = ()
