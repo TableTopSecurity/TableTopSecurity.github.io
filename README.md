@@ -22,7 +22,7 @@
 
 ## Running Pelican for development
     # start local server
-    make serve
+    make devserver
     # site is viewable at http://localhost:8000/
 
 ## Publish
