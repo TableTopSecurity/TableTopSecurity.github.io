@@ -5,8 +5,14 @@
 color: #ff0000;
 }
 
+.img-about {
+	float: left;
+	width: 72px;
+	margin: -6px 10px 0 0;
+}
+
 #social-bar a {
-color: #ffffff;
+color: #999999;
 }
 
 #social-bar a:hover {
@@ -21,4 +27,16 @@ color: #ff0000;
 .navbar-default {
     background-color: #ffffff;
     border-color: #e7e7e7;
+}
+
+.blog-post {
+	padding: 12px 0 28px;
+}
+
+body {
+	line-height: 1.6;
+}
+
+body.home {
+	padding-top:0px !important;
 }
