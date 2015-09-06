@@ -6,7 +6,7 @@ TableTopSecurity is a collaborative research project to investigate the use of g
 # Investigators
 
 ### Mark Gondree
-![Mark Gondree](../images/Nuvola_bug.png MarkG){style=float:left;width:36px;margin-top:-10px} 
+![Mark Gondree](../images/gondree.jpg Gondree){.img-circle .img-about} 
 
 Mark Gondree is a Research Assistant Professor in the Computer Science Department of the Naval Postgraduate School.  He is interested in removing technical barriers to topics in compputer security, to widen dialogies about computer security ethics, personal responsibility online, careers in computer security and technical concepts. He believes students in all disciplines benefit from exercising fun, analytical problem-solving and engaging in thinking about systems adversarially. He believes computer security as a field benefits from increased diversity and more interdisciplinary dialogues, enabled by such accessibility.
 
@@ -15,7 +15,7 @@ Mark Gondree is a Research Assistant Professor in the Computer Science Departmen
 
 
 ### Zachary Peterson
-![Zachary Peterson](../images/Nuvola_bug.png ZNJP){style=float:left;width:36px;margin-top:-10px}
+![Zachary Peterson](../images/znjp.jpg Peterson){.img-circle .img-about}
 
 Zachary Peterson is an Assistant Professor in the Computer Science Department in the College of Engineering at the California Polytechnic State University (Cal Poly) in San Luis Obispo, CA. He is very interested in engaging students of all ages in science, technology, engineering and mathematic (STEM) disciplines, and in particular, computer security and privacy. He is currently developing non-digital games that are designed to remove traditional barriers associated with using a computer, improve security literacy, and introduce students to new career paths related to security and engineering. His first game, [d0x3d!], introduces network security concepts, terminology and cooperative and adversarial thinking to high school and undergraduate students.
 
