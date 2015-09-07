@@ -56,29 +56,31 @@ BANNER_ALL_PAGES = ['index.html']
 # Category options
 USE_FOLDER_AS_CATEGORY = True
 CATEGORY_SAVE_AS = '{slug}.html'
+DEFAULT_CATEGORY = 'Blog'
 
 # Article saving options
 ARTICLE_URL = 'article/{slug}.html'
 ARTICLE_SAVE_AS = 'article/{slug}.html'
+INDEX_SAVE_AS = 'all.html'
+DISPLAY_ARTICLE_INFO_ON_INDEX = True
+SUMMARY_MAX_LENGTH = 100
 
 # Menu items
 DISPLAY_CATEGORIES_ON_MENU = False
+DISPLAY_ARCHIVE_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = False
-DEFAULT_CATEGORY = 'Blog'
-INDEX_SAVE_AS = 'all.html'
+DISPLAY_SOCIAL_ON_MENU = True
 MENUITEMS = (('Blog', '/blog.html'),
              ('About', '/about'),
              ('Media', '/media'),)
 
+# Sidebar options
 DISPLAY_RECENT_POSTS_ON_SIDEBAR = False
 DISPLAY_TAGS_ON_SIDEBAR = True
 DISPLAY_CATEGORIES_ON_SIDEBAR = False
 DISPLAY_SERIES_ON_SIDEBAR = False
 DISPLAY_SOCIAL_ON_SIDEBAR = False
 DISPLAY_ARCHIVE_ON_SIDEBAR = True
-DISPLAY_ARTICLE_INFO_ON_INDEX = True
-
-# Blogroll
 LINKS = ()
 
 # Social widget

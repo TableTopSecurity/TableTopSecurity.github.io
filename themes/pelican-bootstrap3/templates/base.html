@@ -144,7 +144,24 @@
                 </form></span>
               </li>
             {% endif %}
+            {% if DISPLAY_SOCIAL_ON_MENU %} <!-- TTS option -->
+                {% for s in SOCIAL %}
+                    {% if s[2] %}
+                        {% set name_sanitized = s[2]|lower|replace('+','-plus')|replace(' ','-') %}
+                    {% else %}
+                        {% set name_sanitized = s[0]|lower|replace('+','-plus')|replace(' ','-') %}
+                    {% endif %}
+                    {% if name_sanitized in ['flickr', 'spotify', 'stack-overflow', 'weibo'] %}
+                        {% set iconattributes = '"fa fa-' ~ name_sanitized ~ ' fa-2x"' %}
+                    {% else %}
+                        {% set iconattributes = '"fa fa-' ~ name_sanitized ~ '-square fa-2x"' %}
+                    {% endif %}
+                <li id="social-bar"><a href="{{ s[1] }}" title="{{ s[0] }}"><i class={{ iconattributes }} ></i> {# {{ s[0] }} #}</a></li>
+                {% endfor %}
+            {% endif %} <!-- TTS -->
+            {% if DISPLAY_ARCHIVE_ON_MENU %} <!-- TTS option -->
               <li><a href="{{ SITEURL }}/{{ ARCHIVES_URL | default('archives.html') }}"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+            {% endif %} <!-- TTS -->
             </ul>
         </div>
         <!-- /.navbar-collapse -->
