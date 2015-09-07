@@ -54,9 +54,9 @@ USE_FOLDER_AS_CATEGORY = False
 DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = False
 DEFAULT_CATEGORY = 'misc.'
-INDEX_SAVE_AS = 'blog_index.html'
-MENUITEMS = (('Blog', '/blog_index.html'),
-             ('About', '/pages/about.html'),)
+INDEX_SAVE_AS = 'blog.html'
+MENUITEMS = (('Blog', '/blog.html'),
+             ('About', '/about'),)
 
 DISPLAY_RECENT_POSTS_ON_SIDEBAR = False
 DISPLAY_TAGS_ON_SIDEBAR = True
