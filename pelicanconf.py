@@ -13,16 +13,18 @@ TIMEZONE = 'US/Pacific'
 
 DEFAULT_LANG = u'en'
 
-DEFAULT_PAGINATION = 6
+DEFAULT_PAGINATION = 5
+USE_PAGER = False
 
 # Plugins
 PLUGIN_PATHS = ["plugins"]
 PLUGINS = ["assets", "tag_cloud"]
 
-# Tag Cloud
+# Tag Cloud options
 TAG_CLOUD_MAX_ITEMS = 200
 DISPLAY_TAGS_INLINE = True
 TAG_CLOUD_STEPS = 1
+TAGS_URL = 'tags.html'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -47,17 +49,26 @@ EXTRA_PATH_METADATA = {
     'extras/CNAME' : {'path': 'CNAME'},
 }
 
+# Banner options
 BANNER = 'images/go-2.jpg'
-BANNER_ALL_PAGES = ['index.html', 'blog.html']
+BANNER_ALL_PAGES = ['index.html']
+
+# Category options
+USE_FOLDER_AS_CATEGORY = True
+CATEGORY_SAVE_AS = '{slug}.html'
+
+# Article saving options
+ARTICLE_URL = 'article/{slug}.html'
+ARTICLE_SAVE_AS = 'article/{slug}.html'
 
 # Menu items
-USE_FOLDER_AS_CATEGORY = False
 DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = False
-DEFAULT_CATEGORY = 'misc.'
-INDEX_SAVE_AS = 'blog.html'
+DEFAULT_CATEGORY = 'Blog'
+INDEX_SAVE_AS = 'all.html'
 MENUITEMS = (('Blog', '/blog.html'),
-             ('About', '/about'),)
+             ('About', '/about'),
+             ('Media', '/media'),)
 
 DISPLAY_RECENT_POSTS_ON_SIDEBAR = False
 DISPLAY_TAGS_ON_SIDEBAR = True
@@ -65,6 +76,7 @@ DISPLAY_CATEGORIES_ON_SIDEBAR = False
 DISPLAY_SERIES_ON_SIDEBAR = False
 DISPLAY_SOCIAL_ON_SIDEBAR = False
 DISPLAY_ARCHIVE_ON_SIDEBAR = True
+DISPLAY_ARTICLE_INFO_ON_INDEX = True
 
 # Blogroll
 LINKS = ()
@@ -84,7 +96,6 @@ THEME = 'themes/pelican-bootstrap3'
 THEME_STATIC_PATHS=['static']
 CSS_FILE='tts.css'
 CUSTOM_CSS = 'static/tts.css'
-USE_PAGER = True
 
 # Caching
 LOAD_CONTENT_CACHE = False
