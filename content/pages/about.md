@@ -1,6 +1,6 @@
 Title: About Us
-save_as: about.html
 Slug: about
+save_as: about.html
 
 TableTopSecurity is a collaborative research project to investigate the use of games both in and out of classroom for computer security education. We work on security exercises, educational puzzles, non-digital games and a variety of methods to engage students in thinking adversarially about systems in responsible and accessible contexts.
 

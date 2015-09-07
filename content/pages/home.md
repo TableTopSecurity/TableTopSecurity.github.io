@@ -1,7 +1,7 @@
 Title: Home
 Template: home
-save_as: index.html
 Slug: home
+save_as: index.html
 
 ### *Using games to change the game.*
 
