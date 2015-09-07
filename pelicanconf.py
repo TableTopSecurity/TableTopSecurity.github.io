@@ -48,6 +48,7 @@ EXTRA_PATH_METADATA = {
 }
 
 BANNER = 'images/go-2.jpg'
+BANNER_ALL_PAGES = ['index.html', 'blog.html']
 
 # Menu items
 USE_FOLDER_AS_CATEGORY = False
