@@ -53,7 +53,7 @@ BANNER = 'images/go-2.jpg'
 USE_FOLDER_AS_CATEGORY = False
 DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = False
-DEFAULT_CTATEGORY = 'misc.'
+DEFAULT_CATEGORY = 'misc.'
 INDEX_SAVE_AS = 'blog_index.html'
 MENUITEMS = (('Blog', '/blog_index.html'),
              ('About', '/pages/about.html'),)
@@ -63,6 +63,7 @@ DISPLAY_TAGS_ON_SIDEBAR = True
 DISPLAY_CATEGORIES_ON_SIDEBAR = False
 DISPLAY_SERIES_ON_SIDEBAR = False
 DISPLAY_SOCIAL_ON_SIDEBAR = False
+DISPLAY_ARCHIVE_ON_SIDEBAR = True
 
 # Blogroll
 LINKS = ()

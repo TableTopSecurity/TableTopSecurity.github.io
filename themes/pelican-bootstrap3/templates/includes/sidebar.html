@@ -41,6 +41,11 @@
             </li>
         {% endif %}
 
+        {% if DISPLAY_ARCHIVE_ON_SIDEBAR %}
+            <li class="list-group-item"><a href="{{ SITEURL }}/{{ ARCHIVES_URL | default('archives.html') }}"><h4><i class="fa fa-th-list fa-lg"></i><span class="icon-label">Archives</span></h4></a>
+            </li>
+        {% endif %}
+
         {% if DISPLAY_CATEGORIES_ON_SIDEBAR %}
             <li class="list-group-item"><a href="{{ SITEURL }}/{{ CATEGORIES_URL }}"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Categories</span></h4></a>
                 <ul class="list-group" id="categories">
