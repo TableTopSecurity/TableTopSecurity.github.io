@@ -60,21 +60,18 @@
             {% endif %}
         </div>
         <div class ="feature-content">
-         {% if articles %}
-        {% for article in (articles_page.object_list if articles_page else articles) %}
+    {% if articles %}
+        {% for article in articles %}
+        {% for tag in article.tags if 'news' == tag.name %}
             <article>
                 <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
-                {% if DISPLAY_ARTICLE_INFO_ON_INDEX %}
-                    <div class="well well-sm">
-                        {% include "includes/article_info.html" %}
-                    </div>
-                {% endif %}
                 <div class="summary">{{ article.summary }}
                     {% include 'includes/comment_count.html' %}
                     <a class="btn btn-default btn-xs" href="{{ SITEURL }}/{{ article.url }}">more ...</a>
                 </div>
             </article>
             <hr/>
+        {% endfor %}
         {% endfor %}
     {% endif %}
 
