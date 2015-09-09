@@ -42,5 +42,11 @@ body.home {
 }
 
 body.home div#banner {
-	 margin: 0px;
+	margin: 0px;
+}
+
+/* http://nicolasgallagher.com/jump-links-and-viewport-positioning/demo/#method-C */
+a.anchor {
+    padding-top: 55px;
+    margin-top: -55px;
 }
