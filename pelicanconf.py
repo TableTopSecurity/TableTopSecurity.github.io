@@ -51,6 +51,7 @@ EXTRA_PATH_METADATA = {
 
 # Banner options
 BANNER = 'images/go-2.jpg'
+BANNER_ALL_PAGES = True  # well, not really, lets restrict it
 BANNER_PAGES = ['index.html']
 MOVE_MENU_TO_TOP = True
 
