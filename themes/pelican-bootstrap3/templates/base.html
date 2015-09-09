@@ -100,9 +100,27 @@
     {% endif %}
 
 </head>
+<!-- Banner TTS class addition -->
+{% if MOVE_MENU_TO_TOP and output_file in BANNER_PAGES %}
+<body class='home'>
+{% else %}
 <body>
+{% endif %}
+<!-- End TSS class change -->
 
+<!-- Banner TTS added up -->
+{% if MOVE_MENU_TO_TOP %}
+{% if BANNER and BANNER_ALL_PAGES %}
+    {% include 'includes/banner.html' %}
+{% endif %}
+{% endif %}
+<!-- End Banner TSS end -->
+
+{% if MOVE_MENU_TO_TOP and output_file in BANNER_PAGES %}
+<div class="navbar {% if BOOTSTRAP_NAVBAR_INVERSE %}navbar-inverse{% else %}navbar-default{% endif %}" role="navigation">
+{% else %}
 <div class="navbar {% if BOOTSTRAP_NAVBAR_INVERSE %}navbar-inverse{% else %}navbar-default{% endif %} navbar-fixed-top" role="navigation">
+{% endif %}
 	<div class="container{% if BOOTSTRAP_FLUID %}-fluid{% endif %}">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -167,6 +185,9 @@
         <!-- /.navbar-collapse -->
     </div>
 </div> <!-- /.navbar -->
+
+<!-- Banner TTS added up -->
+{% if not MOVE_MENU_TO_TOP %}
 <!-- Banner -->
 {% if BANNER and BANNER_ALL_PAGES %}
     {% include 'includes/banner.html' %}
@@ -174,6 +195,8 @@
     {% block banner %}{% endblock %}
 {% endif %}
 <!-- End Banner -->
+{% endif %}
+<!-- End Banner TSS end -->
 <div class="container{% if BOOTSTRAP_FLUID %}-fluid{% endif %}">
     <div class="row">
         {% if not HIDE_SIDEBAR or ABOUT_ME %}

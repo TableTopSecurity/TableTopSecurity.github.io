@@ -51,7 +51,8 @@ EXTRA_PATH_METADATA = {
 
 # Banner options
 BANNER = 'images/go-2.jpg'
-BANNER_ALL_PAGES = ['index.html']
+BANNER_PAGES = ['index.html']
+MOVE_MENU_TO_TOP = True
 
 # Category options
 USE_FOLDER_AS_CATEGORY = True
