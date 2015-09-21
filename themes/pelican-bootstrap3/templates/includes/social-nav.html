@@ -11,5 +11,5 @@
 	{% else %}
 		{% set iconattributes = '"fa fa-' ~ name_sanitized ~ '-square fa-2x"' %}
 	{% endif %}
-<li id="social-bar"><a href="{{ s[1] }}" title="{{ s[0] }}"><i class={{ iconattributes }} ></i> {# {{ s[0] }} #}</a></li>
+<li class="social-bar"><a href="{{ s[1] }}" title="{{ s[0] }}"><i class={{ iconattributes }} ></i> {# {{ s[0] }} #}</a></li>
 {% endfor %}

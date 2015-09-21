@@ -11,11 +11,11 @@ color: #ff0000;
 	margin: -6px 10px 0 0;
 }
 
-#social-bar a {
+.social-bar a {
 color: #999999;
 }
 
-#social-bar a:hover {
+.social-bar a:hover {
 color: #ff0000;
 }
 
