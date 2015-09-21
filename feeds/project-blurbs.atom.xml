@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>TableTop Security</title><link href="https://tabletopsecurity.github.io/" rel="alternate"></link><link href="https://tabletopsecurity.github.io/feeds/project-blurbs.atom.xml" rel="self"></link><id>https://tabletopsecurity.github.io/</id><updated>2015-07-27T16:42:00-07:00</updated><entry><title>Workshops for Security Education</title><link href="https://tabletopsecurity.github.io/article/workshops-for-security-education.html" rel="alternate"></link><updated>2015-07-27T16:42:00-07:00</updated><author><name>Mark Gondree, Zachary NJ Peterson</name></author><id>tag:tabletopsecurity.github.io,2015-07-27:article/workshops-for-security-education.html</id><summary type="html">&lt;h2&gt;3GSE&lt;/h2&gt;
+&lt;p&gt;With help from USENIX and the community, we held the first ever USENIX Summit on Gaming, Games and Gamification (3GSE) in 2014, as a venue dedicated to game-like approaches in security education. The summit reflected a number of on-going projects and perspectives from the community, everything from video games to hacking competitions.&lt;/p&gt;
+&lt;p&gt;All materials, papers and media are open-access and available on the workshop website, below.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;3GSE'15 (Washington, D.C), co-located with USENIX Security&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.usenix.org/conference/3gse15"&gt;3GSE'15 Workshop website&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;3GSE'14 (San Diego, CA), co-located with USENIX Security&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.usenix.org/conference/3gse14"&gt;3GSE'14 Workshop website&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/playlist?list=PLbRoZ5Rrl5lffaAFth9Y7UOmfbHbb-VEM"&gt;3GSE'14 on YouTube&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLbRoZ5Rrl5lffaAFth9Y7UOmfbHbb-VEM" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/center&gt;&lt;/p&gt;</summary></entry><entry><title>Gatekeepers, a Group Party Game about Firewalls</title><link href="https://tabletopsecurity.github.io/article/gatekeepers-a-group-party-game-about-firewalls.html" rel="alternate"></link><updated>2015-07-01T00:00:00-07:00</updated><author><name>Mark Gondree, Zachary NJ Peterson</name></author><id>tag:tabletopsecurity.github.io,2015-07-01:article/gatekeepers-a-group-party-game-about-firewalls.html</id><summary type="html"></summary></entry><entry><title>ARGs to Teach Computer Security Concepts</title><link href="https://tabletopsecurity.github.io/article/arg.html" rel="alternate"></link><updated>2015-03-01T00:00:00-08:00</updated><author><name>Mark Gondree, Zachary NJ Peterson</name></author><id>tag:tabletopsecurity.github.io,2015-03-01:article/arg.html</id><summary type="html"></summary></entry><entry><title>[d0x3d!]: a Network Security Board Game</title><link href="https://tabletopsecurity.github.io/article/d0x3d.html" rel="alternate"></link><updated>2014-09-01T00:00:00-07:00</updated><author><name>Mark Gondree, Zachary NJ Peterson</name></author><id>tag:tabletopsecurity.github.io,2014-09-01:article/d0x3d.html</id><summary type="html"></summary></entry></feed>
