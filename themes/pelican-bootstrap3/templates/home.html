@@ -61,8 +61,9 @@
         </div>
         <div class ="feature-content">
     {% if articles %}
-        {% for article in articles %}
-        {% for tag in article.tags if 'news' == tag.name %}
+        {% set news_total = 0 %}
+        {% for article in articles if 'news' in article.tags|map(attribute="name") %}
+          {% if loop.index <= NEWS_ITEMS %}
             <article>
                 <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
                 <div class="summary">{{ article.summary }}
@@ -71,10 +72,9 @@
                 </div>
             </article>
             <hr/>
-        {% endfor %}
+          {% endif %}
         {% endfor %}
     {% endif %}
-
     {% include 'includes/pagination.html' %}
         </div>
     </section>

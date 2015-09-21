@@ -16,14 +16,17 @@ DEFAULT_LANG = u'en'
 DEFAULT_PAGINATION = 5
 USE_PAGER = False
 
+# Home / index.html
+NEWS_ITEMS = 5
+
 # Plugins
 PLUGIN_PATHS = ["plugins"]
-PLUGINS = ["assets", "tag_cloud"]
+PLUGINS = ['tag_cloud']
 
 # Tag Cloud options
 TAG_CLOUD_MAX_ITEMS = 200
 DISPLAY_TAGS_INLINE = True
-TAG_CLOUD_STEPS = 1
+TAG_CLOUD_STEPS = 3
 TAGS_URL = 'tags.html'
 
 # Feed generation is usually not desired when developing
@@ -80,9 +83,11 @@ DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_ARCHIVE_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = False
 DISPLAY_SOCIAL_ON_MENU = True
-MENUITEMS = (('Blog', '/blog.html'),
+MENUITEMS = (('Projects', '/projects'),
+             ('Blog', '/blog.html'),
+             ('Media', '/media'),
              ('About', '/about'),
-             ('Media', '/media'),)
+            )
 
 # Sidebar options
 DISPLAY_RECENT_POSTS_ON_SIDEBAR = False
@@ -95,9 +100,12 @@ LINKS = ()
 
 # Social widget
 SOCIAL = (('twitter', 'https://twitter.com/TableTopSec'),
-          ('github', 'http://github.com/tabletopsecurity'),
+          ('youtube', 'https://www.youtube.com/user/TableTopSecurity'),
           ('flickr', 'https://www.flickr.com/tabletopsecurity'),
-          ('boardgamegeek', 'https://boardgamegeek.com/boardgamepublisher/23997/tabletop-security'))
+          ('boardgamegeek', 'https://boardgamegeek.com/boardgamepublisher/23997/tabletop-security'),
+          ('google-plus', 'https://plus.google.com/114066012466458862886'),
+          ('github', 'http://github.com/tabletopsecurity')
+         )
 
 
 # Uncomment following line if you want document-relative URLs when developing

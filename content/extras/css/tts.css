@@ -29,6 +29,23 @@ color: #ff0000;
     border-color: #e7e7e7;
 }
 
+.navbar-right li#social-bar a {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#navbar-affix.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
+    margin: auto;
+}
+
+.navbar-wrapper {
+    min-height:50px;
+}
+
 .blog-post {
 	padding: 12px 0 28px;
 }
@@ -49,4 +66,52 @@ body.home div#banner {
 a.anchor {
     padding-top: 70px;
     margin-top: -70px;
+}
+
+dl#media-list dt {
+    font-weight: normal;
+}
+
+
+div.project-blurb {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.project-blurb h2 {
+   left: 20px; 
+   bottom: 10px;
+   position: absolute;
+   width: 100%;
+}
+
+div#grant-thanks {
+    padding-top: 40px;
+}
+
+div.project-logo {
+   background-repeat:no-repeat;
+   height:250px;
+   width:250px;
+   background-size:cover;
+   background-color:black;
+}
+
+div.project-logo {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+}
+
+div.project-logo:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+
+span.project-caption {
+   color: white; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 5px;
 }

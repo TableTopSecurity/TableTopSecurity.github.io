@@ -1,0 +1,65 @@
+{% extends "article_list.html" %}
+{% block title %}Projects - {{ SITENAME }}{% endblock %}
+
+{% block content %}
+
+    <section id="content">
+        <h1> {{ page.title }} </h1>
+        <div class="entry-content">
+            {{ page.content }}
+        </div>
+
+    {% for article in articles|sort(attribute='date') if 'project-blurbs' == article.category.name %}
+        {% if loop.first %}
+        <div class="row">
+        {% endif %}
+
+            <div class="col-md-4">
+              <div class="project-blurb">
+                <a href="#" 
+                    onclick="return false;"
+                    data-toggle="popover" 
+                    data-html="true"
+                    data-trigger="focus"
+                    data-placement="bottom"
+                    data-content="<div class='project-summary'>{{ article.summary }}{% if article.more_link and article.more %}<div class='text-center'><a class='btn btn-default' href='{{ article.more_link }}'>{{ article.more }}</a></div>{% elif article.more %}<div class='text-center'><a class='btn btn-default' href='{{ SITEURL }}/{{ article.url }}'>{{ article.more }}</a></div>{% endif %}</div>"
+                    data-title="{{ article.title }}">
+                    {% if article.logo %}
+                        <div class="project-logo" style="background-image:url({{ article.logo }});">
+                    {% else %}
+                        <div class="project-logo">
+                    {% endif %}
+                    {% if article.caption %}
+                        <h2><span class="project-caption">{{ article.caption }}</span></h2>
+                    {% endif %}
+                        </div>
+                </a>
+              </div>
+            </div>
+
+        {% if loop.index is divisibleby(3) %}
+        </div>
+        <div class="row">
+        {% endif %}
+
+        {% if loop.last %}
+        </div>
+        {% endif %}
+    {% endfor %}
+    </section>
+{% endblock content %}
+
+
+{% block scripts %}
+<script type="text/javascript">
+    var g = document.getElementById("grant-thanks");
+    var p = document.getElementById("content");
+    p.appendChild(g);
+</script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  $("[data-toggle='popover']").popover({ html:true, container:"body" });
+});
+</script>
+{% endblock %}

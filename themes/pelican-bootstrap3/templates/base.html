@@ -117,9 +117,10 @@
 <!-- End Banner TSS end -->
 
 {% if MOVE_MENU_TO_TOP and output_file in BANNER_PAGES %}
-<div class="navbar {% if BOOTSTRAP_NAVBAR_INVERSE %}navbar-inverse{% else %}navbar-default{% endif %}" role="navigation">
+<div class='nav-wrapper'>
+<div class="navbar {% if BOOTSTRAP_NAVBAR_INVERSE %}navbar-inverse{% else %}navbar-default{% endif %}" role="navigation" data-spy="affix" data-offset-top="60" id="navbar-affix">
 {% else %}
-<div class="navbar {% if BOOTSTRAP_NAVBAR_INVERSE %}navbar-inverse{% else %}navbar-default{% endif %} navbar-fixed-top" role="navigation">
+<div class="navbar {% if BOOTSTRAP_NAVBAR_INVERSE %}navbar-inverse{% else %}navbar-default{% endif %} navbar-fixed-top" role="navigation" id="navbar-affix">
 {% endif %}
 	<div class="container{% if BOOTSTRAP_FLUID %}-fluid{% endif %}">
         <div class="navbar-header">
@@ -163,19 +164,7 @@
               </li>
             {% endif %}
             {% if DISPLAY_SOCIAL_ON_MENU %} <!-- TTS option -->
-                {% for s in SOCIAL %}
-                    {% if s[2] %}
-                        {% set name_sanitized = s[2]|lower|replace('+','-plus')|replace(' ','-') %}
-                    {% else %}
-                        {% set name_sanitized = s[0]|lower|replace('+','-plus')|replace(' ','-') %}
-                    {% endif %}
-                    {% if name_sanitized in ['flickr', 'spotify', 'stack-overflow', 'weibo'] %}
-                        {% set iconattributes = '"fa fa-' ~ name_sanitized ~ ' fa-2x"' %}
-                    {% else %}
-                        {% set iconattributes = '"fa fa-' ~ name_sanitized ~ '-square fa-2x"' %}
-                    {% endif %}
-                <li id="social-bar"><a href="{{ s[1] }}" title="{{ s[0] }}"><i class={{ iconattributes }} ></i> {# {{ s[0] }} #}</a></li>
-                {% endfor %}
+                {% include 'includes/social-nav.html' %}
             {% endif %} <!-- TTS -->
             {% if DISPLAY_ARCHIVE_ON_MENU %} <!-- TTS option -->
               <li><a href="{{ SITEURL }}/{{ ARCHIVES_URL | default('archives.html') }}"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
@@ -185,6 +174,7 @@
         <!-- /.navbar-collapse -->
     </div>
 </div> <!-- /.navbar -->
+</div>
 
 <!-- Banner TTS added up -->
 {% if not MOVE_MENU_TO_TOP %}
@@ -240,6 +230,14 @@
 {% include 'includes/disqus_script.html' %}
 {% include 'includes/ga.html' %}
 {% include 'includes/piwik.html' %}
+
+<script type="text/javascript">
+$('#navbar-affix').affix({
+	offset: {
+		top: $('#banner').outerHeight()
+	}
+});
+</script>
 
 {% block scripts %}{% endblock %}
 </body>
