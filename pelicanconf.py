@@ -45,11 +45,15 @@ TWITTER_WIDGET_ID ='620044429580066816'
 
 PATH = 'content'
 
-STATIC_PATHS = ['images', 'extras/css/tts.css', 'extras/CNAME']
+STATIC_PATHS = ['images',
+    'extras/css/tts.css', 'extras/CNAME',
+    'extras/google14081f6503dca9ab'  # req'd for Google+ website verification
+]
 
 EXTRA_PATH_METADATA = {
     'extras/css/tts.css': {'path': 'static/tts.css'},
     'extras/CNAME' : {'path': 'CNAME'},
+    'extras/google14081f6503dca9ab' : {'path' : 'google14081f6503dca9ab.html'},
 }
 
 # Banner options
