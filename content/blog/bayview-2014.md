@@ -1,6 +1,6 @@
 Title: Hands-on non-digital CS puzzles
 Date: 2014-05-30
-Tags: CS Unplugged, K-12
+Tags: cs-unplugged, k-12
 Authors: gondree
 
 We had a chance to bring several [CS Unplugged](http://csunplugged.org/) -inspired puzzles to a local middle school and try them out with the 5th, 6th and 7th grade. It was really great to see kids engaged with deciphering wheels, towers of hanoi, balance puzzles, parity, 3-colorability and lots of other neat algorithms you can explore with your hands.
