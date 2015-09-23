@@ -59,7 +59,16 @@
 
 <script type="text/javascript">
 $(document).ready(function() {
-  $("[data-toggle='popover']").popover({ html:true, container:"body" });
+    var $popover = $("[data-toggle='popover']").popover({ html:true, container:"body" });
+
+    $popover.on('show.bs.popover', function () {
+        $(this).children('.project-logo').addClass('project-highlight');
+    });
+    $popover.on('hide.bs.popover', function () {
+        $('div.project-logo').each(function () {
+            $(this).removeClass("project-highlight");
+        });
+    });
 });
 </script>
 {% endblock %}

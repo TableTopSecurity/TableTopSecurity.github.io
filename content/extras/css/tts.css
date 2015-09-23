@@ -108,6 +108,11 @@ div.project-logo:hover {
   -webkit-filter: grayscale(0%);
 }
 
+div.project-highlight {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+
 span.project-caption {
    color: white; 
    letter-spacing: -1px;  
