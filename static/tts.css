@@ -11,11 +11,11 @@ color: #ff0000;
 	margin: -6px 10px 0 0;
 }
 
-#social-bar a {
+.navbar-right li.social-bar a {
 color: #999999;
 }
 
-#social-bar a:hover {
+.navbar-right li.social-bar a:hover {
 color: #ff0000;
 }
 
@@ -29,7 +29,7 @@ color: #ff0000;
     border-color: #e7e7e7;
 }
 
-.navbar-right li#social-bar a {
+.navbar-right li.social-bar a {
     padding-left: 8px;
     padding-right: 8px;
 }
@@ -104,6 +104,11 @@ div.project-logo {
 }
 
 div.project-logo:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+
+div.project-highlight {
   filter: none;
   -webkit-filter: grayscale(0%);
 }
