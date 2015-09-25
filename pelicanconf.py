@@ -6,7 +6,7 @@ AUTHOR = u'Mark Gondree, Zachary NJ Peterson'
 SITENAME = u'TableTop Security'
 SITEURL = 'http://localhost:8000'
 SITELOGO = 'images/2497807.png'
-SITELOGO_SIZE = '30px'
+SITELOGO_SIZE = '30'
 FAVICON = 'images/favicon.ico'
 
 TIMEZONE = 'US/Pacific'

@@ -116,8 +116,8 @@
 {% endif %}
 <!-- End Banner TSS end -->
 
-{% if MOVE_MENU_TO_TOP and output_file in BANNER_PAGES %}
 <div class='nav-wrapper'>
+{% if MOVE_MENU_TO_TOP and output_file in BANNER_PAGES %}
 <div class="navbar {% if BOOTSTRAP_NAVBAR_INVERSE %}navbar-inverse{% else %}navbar-default{% endif %}" role="navigation" data-spy="affix" data-offset-top="60" id="navbar-affix">
 {% else %}
 <div class="navbar {% if BOOTSTRAP_NAVBAR_INVERSE %}navbar-inverse{% else %}navbar-default{% endif %} navbar-fixed-top" role="navigation" id="navbar-affix">
@@ -131,7 +131,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a href="{{ SITEURL }}/" class="navbar-brand">
-                {% if SITELOGO %}<img src="{{ SITEURL }}/{{ SITELOGO }}" width="{{ SITELOGO_SIZE }}"/> {% endif %}
+                {% if SITELOGO %}<img src="{{ SITEURL }}/{{ SITELOGO }}" width="{{ SITELOGO_SIZE }}" alt="{{ SITENAME }}"/> {% endif %}
                 {% if not HIDE_SITENAME %}{{ SITENAME }}{% endif %}
             </a>
         </div>
