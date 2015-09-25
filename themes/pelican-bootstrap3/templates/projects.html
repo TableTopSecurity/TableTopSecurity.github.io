@@ -16,8 +16,10 @@
 
             <div class="col-md-4">
               <div class="project-blurb">
-                <a href="#" 
+                <a href="#"
                     onclick="return false;"
+                    tabindex="0"
+                    role="button"
                     data-toggle="popover" 
                     data-html="true"
                     data-trigger="focus"
@@ -25,9 +27,9 @@
                     data-content="<div class='project-summary'>{{ article.summary }}{% if article.more_link and article.more %}<div class='text-center'><a class='btn btn-default' href='{{ article.more_link }}'>{{ article.more }}</a></div>{% elif article.more %}<div class='text-center'><a class='btn btn-default' href='{{ SITEURL }}/{{ article.url }}'>{{ article.more }}</a></div>{% endif %}</div>"
                     data-title="{{ article.title }}">
                     {% if article.logo %}
-                        <div class="project-logo" style="background-image:url({{ article.logo }});">
+                        <div class="project-logo center-block" style="background-image:url({{ article.logo }});">
                     {% else %}
-                        <div class="project-logo">
+                        <div class="project-logo center-block">
                     {% endif %}
                     {% if article.caption %}
                         <h2><span class="project-caption">{{ article.caption }}</span></h2>
