@@ -72,7 +72,6 @@ dl#media-list dt {
     font-weight: normal;
 }
 
-
 div.project-blurb {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -106,6 +105,10 @@ div.project-logo {
 div.project-logo:hover {
   filter: none;
   -webkit-filter: grayscale(0%);
+}
+
+div.project-blurb a:focus {
+  outline: none;
 }
 
 div.project-highlight {
