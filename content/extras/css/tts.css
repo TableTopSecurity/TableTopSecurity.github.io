@@ -64,8 +64,9 @@ body.home div#banner {
 
 /* http://nicolasgallagher.com/jump-links-and-viewport-positioning/demo/#method-C */
 a.anchor {
-    padding-top: 70px;
-    margin-top: -70px;
+    padding-top: 60px;
+    z-index:-10;
+    position: relative;
 }
 
 dl#media-list dt {
