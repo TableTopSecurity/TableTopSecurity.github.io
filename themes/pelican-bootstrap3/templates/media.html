@@ -14,7 +14,7 @@
         <h1> {{ page.title }} </h1>
         <div class="entry-content">
 			<dl class="dl-horizontal" id="media-list">
-				{% for article in dates if 'media' in article.tags|map(attribute="name")%}
+				{% for article in articles|sort(attribute='date') if 'media-links' == article.category.name %}
 					<dt>
 						<span class="categories-timestamp"><time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></span>
 					</dt>
