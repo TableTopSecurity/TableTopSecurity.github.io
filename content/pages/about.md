@@ -24,3 +24,12 @@ Zachary Peterson is an Assistant Professor in the Computer Science Department in
  - Twitter: [@znjp](https://twitter.com/znjp)
  - [http://www.znjp.com](http://www.znjp.com)
 
+
+# Partners
+
+### <a id="coria" class="anchor">Jose Coria</a>
+![Jose Coria](../images/jose_c.jpg Coria){.img-circle .img-about} 
+
+Jose C. Coria is a Computer Science instructor in the Advance Technology division at Hartnell College in Salinas, CA. He is interested in using gamification to create engaging computer security lessons.  He is passionate about introducing underrepresented groups to the computer science field. 
+
+
