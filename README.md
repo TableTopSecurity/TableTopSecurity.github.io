@@ -26,6 +26,7 @@
     # start local server
     make devserver
     # site is viewable at http://localhost:8000/
+    # to stop: make stopserver
 
 ## Publish
     # You have some changes to the `source` branch
