@@ -10,7 +10,7 @@ TableTopSecurity is a collaborative research project to investigate the use of g
 ### <a id="gondree" class="anchor">Mark Gondree</a>
 ![Mark Gondree](../images/gondree.jpg Gondree){.img-circle .img-about} 
 
-Mark Gondree is a Research Assistant Professor in the Computer Science Department of the Naval Postgraduate School.  He is interested in removing technical barriers to topics in compputer security, to widen dialogies about computer security ethics, personal responsibility online, careers in computer security and technical concepts. He believes students in all disciplines benefit from exercising fun, analytical problem-solving and engaging in thinking about systems adversarially. He believes computer security as a field benefits from increased diversity and more interdisciplinary dialogues, enabled by such accessibility.
+Mark Gondree is an Assistant Professor in the Computer Science Department at Sonoma State University.  He is interested in removing technical barriers to topics in compputer security, to widen dialogies about computer security ethics, personal responsibility online, careers in computer security and technical concepts. He believes students in all disciplines benefit from exercising fun, analytical problem-solving and engaging in thinking about systems adversarially. He believes computer security as a field benefits from increased diversity and more interdisciplinary dialogues, enabled by such accessibility.
 
  - Twitter: [@mgondree](https://twitter.com/mgondree)
  - [http://www.gondree.com](http://www.gondree.com)

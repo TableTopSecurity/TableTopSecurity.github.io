@@ -10,6 +10,8 @@ Summary: We have organized several annual workshops to foster innovation in secu
 ## ASE
 In 2016, we started a new workshop: the USENIX Workshop on Advances in Security Education. All materials, papers and media are open-access and available on the workshop websites, below.
 
+* ASE'17 (Vancouver, BC), co-located with USENIX Security
+    * [ASE'17 Workshop website](https://www.usenix.org/conference/ase17)
 * ASE'16 (Austin, TX), co-located with USENIX Security
     * [ASE'16 Workshop website](https://www.usenix.org/conference/ase16)
 

@@ -1,6 +1,6 @@
 Title: New Workshop: Advances in Security Education
 Date: 2016-01-24
-Tags: news, 3gse, ase
+Tags: 3gse, ase
 Authors: gondree
 
 

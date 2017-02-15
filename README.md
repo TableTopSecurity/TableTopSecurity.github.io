@@ -1,19 +1,21 @@
 # TableTopSecurity
 ===
 
-### Install virtualenv
-    pip install virtualenv
-
 ### Clone repository and work with `source` branch
     git clone https://github.com/TableTopSecurity/TableTopSecurity.github.io.git
     cd TableTopSecurity.github.io
     git fetch origin
     git branch gh-pages origin/master
 
-### Setup virtualenv
+### Option 1: Setup virtualenv
+    pip install virtualenv
     mkdir ENV
     virtualenv ENV
     source ENV/bin/activate
+
+### Option 2: conda environment
+	conda create --name TTS python=3
+	source activate TTS
 
 ### Install dependencies
     pip install pelican
