@@ -11,6 +11,11 @@ color: #ff0000;
 	margin: -6px 10px 0 0;
 }
 
+img.img-center {
+    display: block;
+    margin: 0 auto;
+}
+
 .navbar-right li.social-bar a {
 color: #999999;
 }
