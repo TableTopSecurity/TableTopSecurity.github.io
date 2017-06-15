@@ -1,6 +1,6 @@
 Title: Advances in Security Education 2017
 Date: 2017-02-15
-Tags: news, 3gse, ase
+Tags: 3gse, ase
 Authors: gondree
 
 
