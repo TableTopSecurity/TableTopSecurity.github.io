@@ -3,7 +3,7 @@ Date: 2017-01-11
 Tags: [d0x3d!], news
 Unarchive: true
 
-Zachary Peterson recently had the opportuinity to collaborate with Andreas Hagman at Royal Holloway University to create a video demonstrating the value of visualizing security issues through game play. The video features [d0x3d!] as a way to introduce the idea of the value of digital data to young, non-CS students, as well as Andreas' fascinating cyber wargame.
+Zachary Peterson recently had the opportuinity to collaborate with Andreas Haggman at Royal Holloway University to create a video demonstrating the value of visualizing security issues through game play. The video features [d0x3d!] as a way to introduce the idea of the value of digital data to young, non-CS students, as well as Andreas' fascinating cyber wargame.
 
 The [video is available here](https://youtu.be/sPwZKB8ZLyM), and below.
 
