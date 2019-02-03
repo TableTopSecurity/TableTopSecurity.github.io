@@ -107,7 +107,7 @@ SOCIAL = (('twitter', 'https://twitter.com/TableTopSec'),
           ('youtube', 'https://www.youtube.com/user/TableTopSecurity'),
           ('flickr', 'https://www.flickr.com/tabletopsecurity'),
           ('boardgamegeek', 'https://boardgamegeek.com/boardgamepublisher/23997/tabletop-security'),
-          ('google-plus', 'https://plus.google.com/114066012466458862886'),
+          #('google-plus', 'https://plus.google.com/114066012466458862886'),
           ('github', 'http://github.com/tabletopsecurity')
          )
 
