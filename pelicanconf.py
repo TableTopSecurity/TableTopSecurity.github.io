@@ -123,3 +123,5 @@ CUSTOM_CSS = 'static/tts.css'
 
 # Caching
 LOAD_CONTENT_CACHE = False
+
+GOOGLE_ANALYTICS = "G-2XDGP6P58Q"
